@@ -1,9 +1,12 @@
 @import "bourbon";
+@import "grid-settings";
 @import "bower_components/neat/app/assets/stylesheets/neat";
+@import "variables";
+@import "layout";
+@import "nav";
+@import "typography";
+@import "hero";
 
-#title {
+.container {
 
-  @include media(medium-size-up) {
-    @include span-columns(1 of 12);
-  }
 }

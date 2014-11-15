@@ -1,0 +1,33 @@
+.body-content-container {
+  background-color: $dark-orange;
+  padding: 11em;
+  text-align: center;
+}
+
+.hero-logo {
+  width: 400px;
+}
+
+.hero-headline {
+  color: white;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.username-input-box {
+  background-color: $light-orange;
+  border-radius: $base-border-radius;
+  border: none;
+  color: white;
+  font-weight: 300;
+  height: 3em;
+  letter-spacing: em(1.5);
+  margin: 2em auto;
+  padding: 0 1em;
+  width: 20em;
+}
+
+.username-input-box:focus {
+  border-radius: $base-border-radius;
+  outline: 3px solid $medium-orange;
+}

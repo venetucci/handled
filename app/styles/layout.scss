@@ -1,0 +1,16 @@
+.wrap-container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 $gutter;
+
+  @include media($medium-screen-up) {
+    @include span-columns(10 of 12);
+    @include shift(1);
+  }
+}
+
+.centered-content {
+  @include fill-parent;
+  @include clearfix;
+}

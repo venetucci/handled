@@ -1,0 +1,29 @@
+.global-nav {
+  background-color: $dark-orange;
+  height: 3em;
+  padding: 1em 0;
+}
+
+.logo-text {
+  float: left;
+  font-size: 1.15em;
+  font-weight: 700;
+}
+
+.logo {
+  height: 18px;
+}
+
+.global-nav-list {
+  float: right;
+  margin: 0;
+}
+
+.global-nav-item {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+.global-nav-item a {
+  color: white;
+}
