@@ -1,0 +1,9 @@
+@import "bourbon";
+@import "bower_components/neat/app/assets/stylesheets/neat";
+
+#title {
+
+  @include media(medium-size-up) {
+    @include span-columns(1 of 12);
+  }
+}
