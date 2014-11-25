@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  controllerName: 'social-network',
+
   networks: [
     { id: 1, name: 'twitter', logo: 'twitter' },
     { id: 2, name: 'facebook', logo: 'facebook' },
@@ -16,23 +18,11 @@ export default Ember.Route.extend({
     { id: 12, name: 'tumblr', logo: 'tumblr' }
   ],
 
-  model: function() {
+  setupController: function(controller) {
     var store = this.store;
     this.networks.forEach(function(network) {
       store.push('social-network', network);
     });
-    return store.all('social-network');
+    controller.set('model', store.all('social-network'));
   },
-
-  actions: {
-    checkHandle: function() {
-      this.store.all('social-network').forEach(function(model){
-        if (Math.random() > 0.5) {
-          model.set('status',  'available');
-        } else {
-          model.set('status', 'unavailable');
-        }
-      });
-    }
-  }
 });

@@ -7,5 +7,10 @@ export default DS.Model.extend({
 
   available: function() {
     return this.get('status') === 'available';
-  }.property('status')
+  }.property('status'),
+
+  corsProxyUrl: function() {
+    return 'https://cors-anywhere.herokuapp.com/' +
+      this.get('name') + '.com:443/';
+  }.property('name')
 });
