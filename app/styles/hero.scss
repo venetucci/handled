@@ -9,7 +9,7 @@
 }
 
 .hero-tagline {
-  color: white;
+  color: $white;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
@@ -24,7 +24,7 @@
   background-color: $light-orange;
   border-radius: $base-border-radius;
   border: none;
-  color: white;
+  color: $white;
   font-weight: 300;
   height: 3em;
   letter-spacing: em(1.5);
