@@ -3,11 +3,12 @@
   <h3 class="hero-tagline">
     no hassle handle search
   </h3>
-  {{input class="handle-input" type="text" value=handle}}
-
+  <label class="fa fa-at handle-input-label" for="handle-input">
+  </label>
+  {{input id="handle-input" class="handle-input" type="text" value=handle placeholder="YourNewUsername"}}
   <div class="social-networks">
     {{#each network in this}}
-      {{social-network name=network.name favicon=network.favicon handle=handle}}
+      {{social-network logo=network.logo name=network.name handle=handle}}
     {{/each}}
   </div>
 </section>

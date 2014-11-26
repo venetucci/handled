@@ -1,0 +1,25 @@
+.social-networks {
+  margin: 5em 0;
+
+  @include span-columns(12 of 12);
+  @include shift(2);
+}
+
+.social-network {
+  margin-bottom: 1.5em;
+  
+  @include span-columns (3);
+}
+
+.social-network .fa {
+  color: $white;
+  font-size: $h2-font-size;
+  float: left;
+}
+
+.network-name {
+  color: $white;
+  font-size: $h3-font-size;
+  float: left;
+  margin-left: 1.5em;
+}

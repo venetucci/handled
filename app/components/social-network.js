@@ -4,6 +4,7 @@ export default Ember.Component.extend({
   available: false,
   handle: '',
   name: '',
+  classNames: ['social-network'],
 
   baseUrl: function() {
     return this.get('name') + '.com/';
