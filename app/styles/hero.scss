@@ -8,13 +8,13 @@
   width: 400px;
 }
 
-.hero-headline {
+.hero-tagline {
   color: white;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 
-.username-input-box {
+.handle-input {
   background-color: $light-orange;
   border-radius: $base-border-radius;
   border: none;
@@ -27,7 +27,7 @@
   width: 20em;
 }
 
-.username-input-box:focus {
+.handle-input:focus {
   border-radius: $base-border-radius;
   outline: 3px solid $medium-orange;
 }
