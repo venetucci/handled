@@ -1,23 +1,23 @@
-.body-content-container {
-  background-color: $dark-orange;
-  padding: 11em 11em 22em;
-  text-align: center;
-}
-
 .hero-logo {
-  width: 400px;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+
+  @include media($medium-screen-up) {
+    width: 400px;
+  }
 }
 
 .hero-tagline {
   color: $white;
   letter-spacing: 0.3em;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.handle-input-label.fa-at {
-  float: none;
-  font-size: $h1-font-size;
-  color: $light-orange;
+.handle-input-label {
+  float: left;
+  background: url(/assets/at.png) no-repeat 0 0;
 }
 
 .handle-input {
@@ -30,11 +30,16 @@
   letter-spacing: em(1.5);
   margin: 2em auto;
   padding: 0 1em;
-  width: 20em;
+  width: 100%;
 
   @include placeholder {
-      color: $white;
-      opacity: 0.5;
+    color: $white;
+    opacity: 0.5;
+  }
+
+  @include media($large-screen-up) {
+    @include span-columns(4 of 12);
+    @include shift(4);
   }
 }
 

@@ -1,25 +1,40 @@
 .social-networks {
-  margin: 5em 0;
-
   @include span-columns(12 of 12);
-  @include shift(2);
+
+  @include media($medium-screen-up) {
+    margin: 5em 0;
+
+    @include span-columns(12 of 12);
+    @include shift(2);
+  }
 }
 
 .social-network {
+  color: $white;
   margin-bottom: 1.5em;
-  
-  @include span-columns (3);
+  opacity: 0.6;
+
+  @include span-columns (4 of 12);
+  @include shift (1);
+
+  @include media($large-screen-up) {
+    @include span-columns (3 of 12);
+    @include shift (0);
+  }
 }
 
 .social-network .fa {
-  color: $white;
-  font-size: $h2-font-size;
   float: left;
+  font-size: $h2-font-size;
+  width: 1.1em;
 }
 
 .network-name {
-  color: $white;
-  font-size: $h3-font-size;
   float: left;
+  font-size: $base-font-size;
+  margin: 0.2em 0 0 0.2em;
+
+  @include media($medium-screen-up) {
   margin-left: 1.5em;
+  }
 }

@@ -14,3 +14,13 @@
   @include fill-parent;
   @include clearfix;
 }
+
+.body-content-container {
+  background-color: $dark-orange;
+  padding: 11em 3em 22em;
+
+  @include media($medium-screen-up) {
+  padding: 11em 11em 29em;
+  text-align: center;
+  }
+}
