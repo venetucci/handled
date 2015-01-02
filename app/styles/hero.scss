@@ -20,6 +20,15 @@
   background: url(/assets/at.png) no-repeat 0 0;
 }
 
+.handle-input-container {
+  padding: 3em 0;
+
+  @include media($large-screen-up) {
+    @include span-columns(4 of 12);
+    @include shift(4);
+  }
+}
+
 .handle-input {
   background-color: $light-orange;
   border-radius: $base-border-radius;
@@ -28,22 +37,31 @@
   font-weight: 300;
   height: 3em;
   letter-spacing: em(1.5);
-  margin: 2em auto;
   padding: 0 1em;
-  width: 100%;
+  display: inline-block;
 
   @include placeholder {
     color: $white;
     opacity: 0.5;
   }
 
-  @include media($large-screen-up) {
-    @include span-columns(4 of 12);
-    @include shift(4);
-  }
 }
 
 .handle-input:focus {
   border-radius: $base-border-radius;
   outline: 3px solid $medium-orange;
+}
+
+.handle-submit {
+  background: white;
+  border-radius: $base-border-radius;
+  border: none;
+  color: $medium-orange;
+  height: 3em;
+  padding: 0.5em;
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }

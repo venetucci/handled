@@ -1,9 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  available: false,
+  status: '',
   handle: '',
   name: '',
+  available: '',
   classNames: ['social-network'],
 
   baseUrl: function() {
@@ -18,3 +19,4 @@ export default Ember.Component.extend({
     return 'https://' + this.get('baseUrl') + 'favicon.ico';
   }.property('baseUrl'),
 });
+

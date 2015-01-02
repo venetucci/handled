@@ -5,10 +5,16 @@
   </h3>
   <label class="handle-input-label" for="handle-input">
   </label>
-  {{input id="handle-input" class="handle-input" type="text" value=handle placeholder="YourNewUsername"}}
+  <div class="handle-input-container">
+    {{input id="handle-input" class="handle-input" type="text" value=handle placeholder="YourNewUsername"}}
+    <button type="submit" class="handle-submit" {{action "checkHandle"}}>
+      Submit
+    </button>
+  </div>
   <div class="social-networks">
-    {{#each network in this}}
-      {{social-network logo=network.logo name=network.name handle=handle}}
+    {{#each network in controller}}
+      {{social-network logo=network.logo name=network.name handle=handle
+status=network.status available=network.available}}
     {{/each}}
   </div>
 </section>

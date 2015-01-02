@@ -38,3 +38,26 @@
   margin-left: 1.5em;
   }
 }
+
+.network-name.available, .fa.available {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}
+
+.network-name.unavailable, .fa.unavailable {
+  opacity: 0.3;
+  transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+}
+
+.available-button {
+  background: white;
+  border-radius: $base-border-radius;
+  color: $medium-orange;
+  padding: .5em;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
