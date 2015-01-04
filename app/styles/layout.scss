@@ -1,5 +1,8 @@
+body {
+  background-color: $dark-orange;
+}
+
 .wrap-container {
-  max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   padding: 0 $gutter;
@@ -16,7 +19,6 @@
 }
 
 .body-content-container {
-  background-color: $dark-orange;
   padding: 11em 3em 22em;
 
   @include media($medium-screen-up) {
@@ -24,3 +26,4 @@
   text-align: center;
   }
 }
+
