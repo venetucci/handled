@@ -1,20 +1,46 @@
-<section class="body-content-container">
-  <img src="assets/handled-logo.png", class="hero-logo" />
-  <h3 class="hero-tagline">
-    no hassle handle search
-  </h3>
-  <label class="handle-input-label" for="handle-input">
-  </label>
-  <div class="handle-input-container">
-    {{input id="handle-input" class="handle-input" type="text" value=handle placeholder="YourNewUsername"}}
-    <button type="submit" class="handle-submit" {{action "checkHandle"}}>
-      Submit
-    </button>
-  </div>
-  <div class="social-networks">
+<div class="body-content-container wrap-container">
+  <section class="hero">
+    <img src="assets/handled-logo.png", class="hero-logo" />
+    <h3 class="hero-tagline">
+      no hassle handle search
+    </h3>
+    <label class="handle-input-label" for="handle-input">
+    </label>
+    <div class="handle-input-container">
+      {{input id="handle-input" class="handle-input" type="text" value=handle placeholder="YourNewUsername"}}
+      <button type="submit" class="handle-submit" {{action "checkHandle"}}>
+        Submit
+      </button>
+    </div>
+  </section>
+
+  <section class="social-networks">
+    <h3 class="section-title">Social Networks</h3>
     {{#each network in controller}}
       {{social-network logo=network.logo name=network.name handle=handle
-status=network.status available=network.available}}
+  status=network.status available=network.available}}
     {{/each}}
-  </div>
-</section>
+  </section>
+
+  <section class="domains">
+    <h3 class="section-title">Domains</h3>
+    <ul class="domains-list">
+      <li class="domain">hello.com</li>
+      <li class="domain">hello.org</li>
+      <li class="domain">hello.io</li>
+      <li class="domain">hello.cool</li>
+      <li class="domain">hello.com</li>
+      <li class="domain">hello.com</li>
+      <li class="domain">hello.com</li>
+      <li class="domain">hello.com</li>
+      <li class="domain">hello.com</li>
+      <li class="domain">hello.com</li>
+      <li class="domain">hello.com</li>
+      <li class="domain">hello.com</li>
+      <li class="domain">hello.com</li>
+      <li class="domain">hello.com</li>
+      <li class="domain">hello.com</li>
+    </ul>
+    <a href="https://www.hover.com/domains/results?q=grayson+says+what" target="_blank" class="more-button">Find more and buy</a>
+  </section>
+</div>

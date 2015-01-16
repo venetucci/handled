@@ -1,3 +1,7 @@
+.hero {
+  text-align: center;
+}
+
 .hero-logo {
   width: 300px;
   display: block;
@@ -64,4 +68,11 @@
   &:hover {
     opacity: 0.8;
   }
+}
+
+.section-title {
+  color: white;
+  letter-spacing: 1.4px;
+  margin-bottom: 2.6em;
+  text-align: left;
 }
