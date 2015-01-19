@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.ArrayController.extend({
-  handle: 'bar',
+  handle: '',
 
   checkAvailability: function(model, handle) {
     model.set('status', 'unavailable');
