@@ -11,11 +11,11 @@ export default Ember.Route.extend({
     { id: 5, name: 'pinterest', logo: 'pinterest' },
     { id: 6, name: 'flickr', logo: 'flickr' },
     { id: 7, name: 'linkedin', logo: 'linkedin' },
-    { id: 8, name: 'youtube', logo: 'youtube' },
+    { id: 8, name: 'youtube', logo: 'youtube', handlePrefix: 'user/' },
     { id: 9, name: 'vimeo', logo: 'vimeo-square' },
     { id: 10, name: 'foursquare', logo: 'foursquare' },
-    { id: 11, name: 'reddit', logo: 'reddit' },
-    { id: 12, name: 'tumblr', logo: 'tumblr' }
+    { id: 11, name: 'reddit', logo: 'reddit', handlePrefix: 'u/' },
+    { id: 12, name: 'tumblr', logo: 'tumblr', handlePrefix: 'blog/' }
   ],
 
   setupController: function(controller) {
